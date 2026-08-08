@@ -3,120 +3,356 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ali Bin Khalid</title>
-<style>
-  :root {
-    --bg: #0f1115;
-    --card: #171a21;
-    --text: #e8e8ea;
-    --muted: #9a9ea6;
-    --accent: #6ea8fe;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-  }
-  header {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 80px 24px 40px;
-    text-align: center;
-  }
-  header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 8px;
-  }
-  header p {
-    color: var(--muted);
-    font-size: 1.1rem;
-    margin-top: 0;
-  }
-  main {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 24px 80px;
-  }
-  section {
-    background: var(--card);
-    border-radius: 12px;
-    padding: 28px;
-    margin-bottom: 24px;
-  }
-  section h2 {
-    margin-top: 0;
-    font-size: 1.3rem;
-  }
-  .links {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    margin-top: 16px;
-    flex-wrap: wrap;
-  }
-  .links a {
-    color: var(--accent);
-    text-decoration: none;
-    border: 1px solid var(--accent);
-    padding: 8px 16px;
-    border-radius: 8px;
-    font-size: 0.95rem;
-  }
-  .links a:hover {
-    background: var(--accent);
-    color: var(--bg);
-  }
-  ul {
-    padding-left: 20px;
-    color: var(--muted);
-  }
-  footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 0.85rem;
-    padding-bottom: 40px;
-  }
-</style>
+<title>Ali Bin Khalid — Portfolio</title>
+<meta name="description" content="Ali Bin Khalid's personal portfolio — projects, skills, and experience.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-  <h1>Ali Bin Khalid</h1>
-  <p>Add a one-line tagline about what you do here.</p>
-  <div class="links">
-    <a href="mailto:alibinkhalid6@gmail.com">Email</a>
-    <a href="https://github.com/YOUR-USERNAME" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/YOUR-PROFILE" target="_blank">LinkedIn</a>
+<div id="scroll-progress"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Ali Bin Khalid</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
 <main>
-  <section>
-    <h2>About</h2>
-    <p>Write a short paragraph about yourself, your background, and what you're currently working on.</p>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="eyebrow"><span class="status-dot"></span> Interning at Lambda Theta · Karachi, Pakistan</div>
+      <h1>Hi, I'm <span class="highlight">Ali Bin Khalid</span> 👋</h1>
+      <p class="tagline">
+        I'm a <span class="role-rotator"><span id="role-rotator-text"></span><span class="cursor">&nbsp;</span></span>
+      </p>
+      <p class="tagline">Final-year Software Engineering student building real-world computer vision &amp; AI systems — from CCTV activity detection to full-stack web apps.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="social-row">
+        <a href="https://github.com/muhammad-ali-4916" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/ali-khalid-715698330/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">in</a>
+        <a href="mailto:alibinkhalid6@gmail.com" aria-label="Email" title="Email">@</a>
+      </div>
+      <div class="scroll-cue">↓ Scroll to explore</div>
+    </div>
   </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>Project one — short description.</li>
-      <li>Project two — short description.</li>
-      <li>Project three — short description.</li>
-    </ul>
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">About Me</span>
+        <h2>A little about who I am</h2>
+        <p>The story behind the code.</p>
+      </div>
+
+      <div class="about-grid reveal">
+        <div class="about-photo"><span>AK</span></div>
+        <div class="about-text">
+          <p>
+            Hey there! I'm <strong>Ali</strong>, a final-year Software Engineering student at
+            <strong>Sir Syed University</strong> in Karachi. Alongside my studies, I work part-time as an
+            AI/ML intern at <strong>Lambda Theta</strong>, where I get to apply what I learn in class to
+            real computer vision systems.
+          </p>
+          <p>
+            At Lambda Theta, I work on <strong>Nexa AI</strong>, a project focused on activity detection
+            and classification in CCTV footage using tools like <strong>MMPose</strong>, keypoint detection,
+            and <strong>YOLO</strong>. Beyond that, I help label datasets, train and evaluate models, and
+            handle the annotation and data-processing work that keeps our ML pipelines running.
+          </p>
+          <p>
+            Outside of AI, I enjoy building full-stack web projects to sharpen my software engineering
+            fundamentals — and when I'm away from the keyboard, you'll usually find me playing football.
+          </p>
+
+          <div class="about-facts">
+            <div class="fact"><span class="label">Location</span>Karachi, Pakistan</div>
+            <div class="fact"><span class="label">Focus</span>AI / Computer Vision &amp; Web Dev</div>
+            <div class="fact"><span class="label">Status</span>Software Engineering Student (Final Year)</div>
+            <div class="fact"><span class="label">Availability</span>Open to opportunities</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Skills</h2>
-    <p>List your key skills, tools, or technologies here.</p>
+  <!-- ================= SKILLS ================= -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Skills</span>
+        <h2>What I work with</h2>
+        <p>Tools and technologies I'm learning and building with.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="icon">🤖</div>
+          <h3>AI &amp; Machine Learning</h3>
+          <p style="color:var(--muted); font-size:0.9rem; margin:0;">Building and training models on real-world data.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="icon">🎥</div>
+          <h3>Computer Vision</h3>
+          <p style="color:var(--muted); font-size:0.9rem; margin:0;">Detection, tracking, and dataset tooling from my work at Lambda Theta.</p>
+          <div class="tag-row">
+            <span class="tag">OpenCV</span>
+            <span class="tag">YOLO</span>
+            <span class="tag">MMPose</span>
+            <span class="tag">Keypoint Detection</span>
+            <span class="tag">CVAT</span>
+            <span class="tag">FiftyOne</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="icon">🌐</div>
+          <h3>Web Development</h3>
+          <p style="color:var(--muted); font-size:0.9rem; margin:0;">Full-stack basics from course and personal projects.</p>
+          <div class="tag-row">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Java</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="icon">🛠️</div>
+          <h3>Tools &amp; Data</h3>
+          <p style="color:var(--muted); font-size:0.9rem; margin:0;">The everyday tools that keep my workflow running.</p>
+          <div class="tag-row">
+            <span class="tag">Git</span>
+            <span class="tag">SQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">JUnit Testing</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Projects</span>
+        <h2>Things I've built</h2>
+        <p>A few projects I've worked on — more to come as I keep learning.</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <span class="badge-featured">Featured</span>
+            🧠
+          </div>
+          <div class="project-body">
+            <h3>Brain Tumor Classification</h3>
+            <p>Takes an MRI scan as input and detects &amp; classifies the tumor into one of four classes. Built end-to-end, from model to interface.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <span style="color:var(--muted-dim); font-size:0.85rem;">Code coming soon</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-thumb">🛒</div>
+          <div class="project-body">
+            <h3>E-Commerce Recommendation Engine</h3>
+            <p>A course project where I built a recommendation model that suggests products based on a customer's past purchasing behavior.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Recommendation Systems</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/muhammad-ali-4916/E-commerce_recommendation_engine" target="_blank" rel="noopener">Code →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-thumb">🚌</div>
+          <div class="project-body">
+            <h3>Bus Ticket Booking System</h3>
+            <p>A full Python application where users can browse bus routes and book tickets — built entirely with a Python backend and frontend.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/muhammad-ali-4916/bus_ticket_system" target="_blank" rel="noopener">Code →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-thumb">🏬</div>
+          <div class="project-body">
+            <h3>E-Commerce Website</h3>
+            <p>A fully functional online store built as part of a team course project, with product search, cart, listings, filters, and price-range selection.</p>
+            <div class="tag-row">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Team Project</span>
+            </div>
+            <div class="project-links">
+              <span style="color:var(--muted-dim); font-size:0.85rem;">Code coming soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE / EDUCATION ================= -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Journey</span>
+        <h2>Experience &amp; Education</h2>
+        <p>Where I've been and what I've been learning.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-date">Current</span>
+          <h3>AI/ML Intern</h3>
+          <span class="org">Lambda Theta · Karachi (Part-Time)</span>
+          <p>Working on Nexa AI, a computer vision system for activity detection and classification in CCTV footage, using MMPose, keypoint detection, and YOLO. Also handle dataset labeling, annotation, model training, and testing/evaluation across other company projects.</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-date">Oct 2023 — Jun 2027 (Expected)</span>
+          <h3>B.E. Software Engineering</h3>
+          <span class="org">Sir Syed University, Karachi</span>
+          <p>Final-year software engineering student, currently in my last year of studies.</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-date">2021 — 2023</span>
+          <h3>Intermediate (Pre-Engineering)</h3>
+          <span class="org">Jauhar Degree College, Karachi</span>
+          <p>Completed pre-engineering coursework, building the foundation for my software engineering studies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section id="certifications" class="alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Credentials</span>
+        <h2>Certifications &amp; Achievements</h2>
+        <p>Courses and milestones along the way.</p>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="icon">✓</div>
+          <div>
+            <h4>Introduction to Artificial Intelligence</h4>
+            <span>NeuroComputation Lab, NED University of Engineering &amp; Technology</span>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="icon">✓</div>
+          <div>
+            <h4>Workshop: Introduction to App Development</h4>
+            <span>NeuroComputation Lab, NED University of Engineering &amp; Technology</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Contact</span>
+        <h2>Let's work together</h2>
+        <p>Have a project, an internship opportunity, or just want to say hi? My inbox is open.</p>
+      </div>
+
+      <div class="contact-wrap reveal">
+        <div class="contact-info">
+          <h3>Get in touch</h3>
+          <div class="fact"><span class="label">Email</span>alibinkhalid6@gmail.com</div>
+          <div class="fact"><span class="label">Location</span>Karachi, Pakistan</div>
+          <div class="fact"><span class="label">Response time</span>Usually within a day or two</div>
+          <div class="social-row" style="justify-content:flex-start; margin-top:24px;">
+            <a href="https://github.com/muhammad-ali-4916" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+            <a href="https://www.linkedin.com/in/ali-khalid-715698330/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a href="mailto:alibinkhalid6@gmail.com" aria-label="Email">@</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <p class="form-note">This opens your email app with the message pre-filled — no data is stored or sent anywhere else.</p>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
-  &copy; 2026 Ali Bin Khalid
+  <p>Designed &amp; built by Ali Bin Khalid.</p>
+  <p>&copy; <span id="year"></span> Ali Bin Khalid. All rights reserved.</p>
 </footer>
 
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
 </body>
 </html>
